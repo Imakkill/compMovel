@@ -1,0 +1,39 @@
+ion-list{
+  height: 100%;
+}
+
+ion-item{
+  margin: 0 auto;
+}
+
+ion-input{
+  font-size: 50pt;
+  text-align: right;
+  margin-right: 7%;
+}
+
+ion-fab-button{
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 20pt;
+  --background: #333333;
+  --background-activated: #333333;
+}
+
+.operacao{
+  --background: #ff9f0c;
+  --background-activated: #ff9f0c;
+}
+
+.operacao2{
+  --background: #a5a5a5;
+  --background-activated: #a5a5a5;
+  --color: #050505;
+}
+
+#zero{
+  width: 45%;
+  height: 90%;
+}

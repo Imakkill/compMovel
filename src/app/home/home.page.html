@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-list>
+      <ion-item></ion-item>
+      <ion-item></ion-item>
+      <ion-item></ion-item>
+      <ion-item></ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="visor"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-fab-button (click)="zerar()" class="operacao2">
+          AC
+        </ion-fab-button>
+        <ion-fab-button (click)= "adicionarOperacao(4)" class="operacao2">
+         +/-
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarOperacao(5)" class="operacao2">
+         %
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarOperacao(3)" class="operacao">
+          ÷
+         </ion-fab-button>
+      </ion-item>
+      <ion-item>
+        <ion-fab-button (click)="adicionarNumero('7')">
+          7
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarNumero('8')">
+         8
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarNumero('9')">
+         9
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarOperacao(2)" class="operacao">
+          x
+         </ion-fab-button>
+      </ion-item>
+      <ion-item>
+        <ion-fab-button (click)="adicionarNumero('4')">
+          4
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarNumero('5')">
+         5
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarNumero('6')">
+         6
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarOperacao(1)" class="operacao">
+          -
+         </ion-fab-button>
+      </ion-item>
+      <ion-item>
+        <ion-fab-button (click)="adicionarNumero('1')">
+          1
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarNumero('2')">
+         2
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarNumero('3')">
+         3
+        </ion-fab-button>
+        <ion-fab-button (click)="adicionarOperacao(0)" class="operacao">
+          +
+         </ion-fab-button>
+      </ion-item>
+      <ion-item>
+        <ion-fab-button (click)="adicionarNumero('0')" id="zero">
+          0
+         </ion-fab-button>
+         <ion-fab-button>
+          ,
+         </ion-fab-button>
+         <ion-fab-button (click)="calcular()" class="operacao">
+           =
+          </ion-fab-button>
+  
+      </ion-item>
+    </ion-list>
+  
+  </ion-content>
+
