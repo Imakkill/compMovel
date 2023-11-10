@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agenda de Contatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-item>
+      <ion-toggle (ionChange)="habilitar()">Habilitar Edição</ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Nome" placeholder="Insira o nome" [(ngModel)]="nome" disabled="{{edicao}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Telefone" placeholder="Insira o telefone" type="number" [(ngModel)]="telefone" disabled="{{edicao}}"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="editar()" disabled="{{edicao}}">Salvar</ion-button>
+    <ion-button expand="block" (click)="excluir()" disabled="{{edicao}}" color="danger">Excluir</ion-button>
+  </ion-list>
+
+</ion-content>
